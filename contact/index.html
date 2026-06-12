@@ -10,7 +10,45 @@
 </head>
 <body data-root="../" data-page="contact">
   <div id="site-nav"></div>
-  <main><section class="page-shell"><p class="eyebrow">Get in Touch</p><h1>Contact Reagan Family Farm</h1><p>Questions about crop availability, visiting the farm, or seasonal events? Reach out before your visit.</p></section></main>
+  <main class="contact-page">
+    <div class="contact-wrap">
+      <section class="contact-copy">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Contact Reagan Family Farm</h1>
+        <p>Questions about crop availability, visiting the farm, or seasonal events? Send a message before your visit. For the most current picking updates, check the farm's Facebook page.</p>
+        <div class="contact-meta">
+          <div><strong>Location</strong><span>Fayetteville, Arkansas</span></div>
+          <div><strong>Current Picking Updates</strong><span>Follow Reagan Family Farm on Facebook before heading out.</span></div>
+          <div><strong>Best for</strong><span>Questions about availability, visits, and seasonal events.</span></div>
+        </div>
+      </section>
+      <section class="contact-form" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Send a Message</h2>
+        <form action="mailto:info@reaganfamilyfarm.com" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="Name" type="text" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" required>
+            </div>
+            <div class="full">
+              <label for="subject">Subject</label>
+              <input id="subject" name="Subject" type="text" required>
+            </div>
+            <div class="full">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" required></textarea>
+            </div>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="contact-note">This opens your email app so you can send the message directly to the farm.</p>
+        </form>
+      </section>
+    </div>
+  </main>
   <div id="site-footer"></div>
   <script src="../assets/js/site.js"></script>
   <script src="../assets/js/contact.js"></script>
